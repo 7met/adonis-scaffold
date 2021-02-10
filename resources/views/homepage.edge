@@ -1,41 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ title }}</title>
-  <link href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap" rel="stylesheet">
-  <link href="/assets/tailwind.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.0/dist/alpine.min.js" defer></script>
-</head>
-<body>
-<div class="bg-white">
-  <div class="relative overflow-hidden">
-    @include('partials/header')
-    <main class="space-y-6">
-      <div class="pt-10 bg-gray-900 sm:pt-16 lg:pt-8 lg:pb-14 lg:overflow-hidden">
-        @include('partials/heroarea')
-      </div>
+@layout('layouts/public')
 
-      <!-- Feature section with screenshot -->
-      {{--  @include('partials/homepage/featurewithscreenshot.edge')  --}}
-
-      <!-- Feature section with grid -->
-      {{--  @include('partials/homepage/featurewithgrid.edge')  --}}
-
-      <!-- Testimonial section -->
-      {{--  @include('partials/homepage/testimonialimageleft.edge')
-      @include('partials/homepage/testimonialimageright.edge')  --}}
-
-      <!-- Three column content section -->
-      {{--  @include('partials/homepage/threecolumncontent.edge')  --}}
-
-      <!-- CTA Section -->
-      @include('partials/homepage/fullwidthimageleftcallout.edge')
-
-    </main>
-    @include('partials/footer.edge')
+@section('content')
+<main class="space-y-6">
+  <div class="pt-10 bg-gray-900 sm:pt-16 lg:pt-8 lg:pb-14 lg:overflow-hidden">
+    @include('partials/heroarea')
   </div>
-</div>
-</body>
-</html>
+
+  <!-- Feature section with screenshot -->
+  {{--  @include('partials/homepage/featurewithscreenshot.edge')  --}}
+
+  <!-- Feature section with grid -->
+  {{--  @include('partials/homepage/featurewithgrid.edge')  --}}
+
+  <!-- Testimonial section -->
+  {{--  @include('partials/homepage/testimonialimageleft.edge')
+  @include('partials/homepage/testimonialimageright.edge')  --}}
+
+  <!-- Three column content section -->
+  {{--  @include('partials/homepage/threecolumncontent.edge')  --}}
+
+  <!-- CTA Section -->
+  @include('partials/homepage/fullwidthimageleftcallout.edge')
+
+</main>
+@endsection
