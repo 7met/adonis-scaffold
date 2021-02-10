@@ -13,7 +13,9 @@ npm -v
 
 ### Start
 Clone repository
+
 Remove .git directory
+
 Run ```npm -i```
 
 ### Packages installed to start up the project
