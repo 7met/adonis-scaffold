@@ -23,6 +23,8 @@ npm i @adonisjs/view
 npm i @adonisjs/auth@alpha
 npm i @adonisjs/shield@alpha
 npm i tailwindcss@latest postcss@latest autoprefixer@latest
+npm i @tailwindcss/forms
+npm i @tailwindcss/aspect-ratio
 ```
 
 ### Invoking packages needed

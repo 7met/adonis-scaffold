@@ -23,6 +23,8 @@
         "@adonisjs/session": "^4.0.6",
         "@adonisjs/shield": "^4.0.3",
         "@adonisjs/view": "^3.1.0",
+        "@tailwindcss/aspect-ratio": "^0.2.0",
+        "@tailwindcss/forms": "^0.2.1",
         "autoprefixer": "^10.2.4",
         "luxon": "^1.25.0",
         "mysql": "^2.18.1",

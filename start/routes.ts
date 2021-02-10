@@ -20,4 +20,4 @@
 
 import Route from '@ioc:Adonis/Core/Route'
 
-Route.on('/').render('welcome')
+Route.on('/').render('homepage',  { title: 'Create a snappy page title' })
