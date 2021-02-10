@@ -18,3 +18,9 @@ node ace invoke @adonisjs/auth
 node ace invoke @adonisjs/shield
 npx tailwindcss init -p
 ```
+
+
+## If you make modifications to Tailwind and need to recompile
+```
+npx tailwindcss-cli@latest build ./resources/assets/css/tailwind.css -o ./public/assets/tailwind.css
+```

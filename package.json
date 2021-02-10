@@ -4,7 +4,7 @@
     "private": true,
     "scripts": {
         "build": "node ace build --production",
-        "start": "./node_modules/.bin/tailwind build ./public/assets/tailwind.css -o ./public/assets/tailwindoutput.css && node server.js",
+        "start": "npx tailwindcss-cli@latest build ./resources/assets/css/tailwind.css -o ./public/assets/tailwind.css && node server.js",
         "dev": "node ace serve --watch"
     },
     "devDependencies": {
