@@ -1,6 +1,6 @@
 # Adonis Starter platform
 
-### Prerequisites
+## Prerequisites
 AdonisJS requires Node.js >= 12.0.0, along with npm >= 6.0.0. You can check the version of Node.js and npm by running the following commands.
 
 ```
@@ -11,11 +11,9 @@ npm -v
 # 6.13.7
 ```
 
-### Start
-Clone repository
-
-Remove .git directory
-
+## Start
+Clone repository \
+Remove .git directory \
 Run ```npm -i```
 
 ### Packages installed to start up the project
