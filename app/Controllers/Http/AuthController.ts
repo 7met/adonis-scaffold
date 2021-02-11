@@ -21,6 +21,10 @@ export default class AuthController {
 
     const userDetails = await request.validate({
       schema: validationSchema,
+      messages: {
+        required: '{{ field }} is required to sign up',
+        'email.unique': 'The {{ field }} must unique'
+      }
     })
 
     /**
