@@ -22,7 +22,7 @@ export default class AuthController {
     const userDetails = await request.validate({
       schema: validationSchema,
       messages: {
-        required: '{{ field }} is required to sign up',
+        required: 'Your {{ field }} is required to sign up',
         'email.unique': 'The {{ field }} must unique'
       }
     })
@@ -38,5 +38,20 @@ export default class AuthController {
 
     await auth.login(user)
     response.redirect('/dashboard')
+  }
+
+  public async login ({ auth, request, response }: HttpContextContract) {
+    const email = request.input('email')
+    const password = request.input('password')
+    const rememberUser = !!request.input('remember_me')
+
+    await auth.attempt(email, password, rememberUser)
+
+    response.redirect('/dashboard')
+  }
+  public async logout ({ auth, response }: HttpContextContract) {
+    await auth.logout()
+
+    response.redirect('/')
   }
 }

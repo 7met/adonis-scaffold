@@ -22,8 +22,10 @@ import Route from '@ioc:Adonis/Core/Route'
 
 Route.on('/').render('homepage',  { title: 'Create a snappy page title' })
 Route.on('/login').render('auth/login',  { title: 'Login to our new application' }).as('login')
+Route.post('/login', 'AuthController.login')
 Route.on('/register').render('auth/register',  { title: 'Register for our new application' }).as('register')
 Route.post('/register', 'AuthController.register')
+Route.get('/logout', 'AuthController.logout')
 
 
 Route.get('/dashboard', async ({ auth }) => {
