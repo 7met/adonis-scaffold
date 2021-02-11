@@ -1,0 +1,7 @@
+<a
+  href="{{ linkAction }}"
+  class="{{ isCurrent ? 'text-white' : 'text-cyan-100' }} text-sm font-medium rounded-md bg-white bg-opacity-0 px-3 py-2 hover:bg-opacity-10"
+  {{--  :class="{ 'text-white': isCurrent, 'text-cyan-100': !isCurrent }"  --}}
+  aria-current="false">
+  {{ linkText }}
+</a>
