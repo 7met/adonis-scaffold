@@ -28,6 +28,8 @@
         "autoprefixer": "^10.2.4",
         "luxon": "^1.25.0",
         "mysql": "^2.18.1",
+        "phc-argon2": "^1.1.0",
+        "phc-bcrypt": "^1.0.5",
         "postcss": "^8.2.6",
         "proxy-addr": "^2.0.6",
         "reflect-metadata": "^0.1.13",
