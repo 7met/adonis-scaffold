@@ -59,10 +59,10 @@ class="pb-24 bg-gradient-to-r from-light-blue-800 to-cyan-600">
         <div class="hidden lg:block lg:col-span-2">
           <nav class="flex space-x-4">
             @!component('components.app.headerfullnavlink', { linkAction: route('/dashboard'), linkText: 'Home', isCurrent: true })
-            @!component('components.app.headerfullnavlink', { linkAction: '#', linkText: 'Profile' })
-            @!component('components.app.headerfullnavlink', { linkAction: '#', linkText: 'Resources' })
-            @!component('components.app.headerfullnavlink', { linkAction: '#', linkText: 'Company Directory' })
-            @!component('components.app.headerfullnavlink', { linkAction: '#', linkText: 'Openings' })
+            @!component('components.app.headerfullnavlink', { linkAction: '#', linkText: 'Link 1' })
+            @!component('components.app.headerfullnavlink', { linkAction: '#', linkText: 'Link 2' })
+            @!component('components.app.headerfullnavlink', { linkAction: '#', linkText: 'Link 3' })
+            @!component('components.app.headerfullnavlink', { linkAction: '#', linkText: 'Link 4' })
           </nav>
         </div>
         <div class="px-12 lg:px-0">
@@ -159,11 +159,11 @@ class="pb-24 bg-gradient-to-r from-light-blue-800 to-cyan-600">
         </div>
       </div>
       <div class="mt-3 px-2 space-y-1">
-        <a href="#" class="block rounded-md px-3 py-2 text-base text-gray-900 font-medium hover:bg-gray-100 hover:text-gray-800">Home</a>
-        <a href="#" class="block rounded-md px-3 py-2 text-base text-gray-900 font-medium hover:bg-gray-100 hover:text-gray-800">Profile</a>
-        <a href="#" class="block rounded-md px-3 py-2 text-base text-gray-900 font-medium hover:bg-gray-100 hover:text-gray-800">Resources</a>
-        <a href="#" class="block rounded-md px-3 py-2 text-base text-gray-900 font-medium hover:bg-gray-100 hover:text-gray-800">Company Directory</a>
-        <a href="#" class="block rounded-md px-3 py-2 text-base text-gray-900 font-medium hover:bg-gray-100 hover:text-gray-800">Openings</a>
+        @!component('components.app.headermobilenavlink', { linkAction: route('/dashboard'), linkText: 'Home' })
+        @!component('components.app.headermobilenavlink', { linkAction: '#', linkText: 'Link 1' })
+        @!component('components.app.headermobilenavlink', { linkAction: '#', linkText: 'Link 2' })
+        @!component('components.app.headermobilenavlink', { linkAction: '#', linkText: 'Link 3' })
+        @!component('components.app.headermobilenavlink', { linkAction: '#', linkText: 'Link 4' })
       </div>
     </div>
     <div class="pt-4 pb-2">

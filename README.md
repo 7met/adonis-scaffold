@@ -42,4 +42,8 @@ npx tailwindcss init -p
 npx tailwindcss-cli@latest build ./resources/assets/css/tailwind.css -o ./public/assets/tailwind.css
 ```
 
+## Things I'd still like to add
+- [ ] Forgot password links and workflow 
+- [ ] Datatables component 
+- [ ] Extract more of the dashboard to reusable components 
 
